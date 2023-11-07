@@ -5,10 +5,14 @@ class math{
 	public:
 		string isPrime(int n)
 		{
-			int d=0;
-			for(int i=2 ; i<n ; i++)
+			int d=0,i=2;
+			while (i<n)
+			{
 				if(n%i==0)
 					d++;
+				i++;
+			}
+			
 			if(d==0)
 				return "true";
 			else
